@@ -1,0 +1,42 @@
+/* app/style.css — basic styles shared by the auth pages */
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f5f6f8;
+}
+
+/* centered white box, used on every page */
+.auth-box {
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+button {
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #00758f;
+  border-color: #00758f;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* error message below the form */
+.error {
+  color: #c0392b;
+}
