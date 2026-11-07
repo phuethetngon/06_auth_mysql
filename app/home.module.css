@@ -1,0 +1,175 @@
+.page {
+  min-height: 100vh;
+  background: #e0e7ff;
+  color: #14213d;
+  padding: 24px 6%;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 800;
+  color: #3149b8;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #53627e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #3149b8;
+}
+
+.hero {
+  max-width: 1150px;
+  margin: 90px auto 50px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #3149b8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 20px 0;
+}
+
+.description {
+  color: #65728b;
+  line-height: 1.8;
+  font-size: 17px;
+  max-width: 500px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.primary,
+.secondary {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.primary {
+  background: #3149b8;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #3149b8;
+  border: 1px solid #dce2ef;
+}
+
+.primary:hover {
+  background: #243b9b;
+}
+
+.secondary:hover {
+  background: #eef1fb;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0e5f0;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 15px 50px rgba(25, 42, 90, 0.07);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin: 0 0 24px;
+}
+
+.info {
+  border-top: 1px solid #edf0f5;
+  padding: 18px 0;
+}
+
+.info span {
+  display: block;
+  color: #8792a6;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  letter-spacing: 1px;
+}
+
+.info strong {
+  font-size: 18px;
+  color: #182544;
+}
+
+.footer {
+  max-width: 1150px;
+  margin: 50px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #dfe5ef;
+  color: #8792a6;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 25px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+    gap: 35px;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
+.page {
+  background: #e0e7ff !important;
+  padding: 60px !important;
+}

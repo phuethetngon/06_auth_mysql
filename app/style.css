@@ -1,42 +1,75 @@
-/* app/style.css — basic styles shared by the auth pages */
+
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  padding: 20px;
-  background: #f5f6f8;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fc;
+  color: #14213d;
 }
 
-/* centered white box, used on every page */
+/* Authentication pages */
+
 .auth-box {
-  max-width: 360px;
-  margin: 40px auto;
-  padding: 24px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  width: 90%;
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e0e5f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(25, 42, 90, 0.06);
 }
 
-form {
+.auth-box h1 {
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+
+.auth-box form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
-input,
-button {
-  padding: 10px;
-  font: inherit;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+.auth-box input {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid #dce2ef;
+  border-radius: 8px;
+  outline: none;
 }
 
-button {
-  background: #00758f;
-  border-color: #00758f;
-  color: #fff;
+.auth-box input:focus {
+  border-color: #3149b8;
+}
+
+.auth-box button {
+  padding: 14px;
+  background: #3149b8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-/* error message below the form */
+.auth-box button:hover {
+  background: #243b9b;
+}
+
+.auth-box a {
+  color: #3149b8;
+}
+
 .error {
-  color: #c0392b;
+  color: #dc2626;
+  margin-top: 12px;
 }

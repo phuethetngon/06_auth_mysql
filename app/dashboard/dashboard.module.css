@@ -1,0 +1,269 @@
+
+.page {
+  min-height: 100vh;
+  background: #f5f7fc;
+  color: #14213d;
+  font-family: Arial, sans-serif;
+  padding: 28px 6%;
+}
+
+.header {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 800;
+  color: #3149b8;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.homeLink {
+  color: #65728b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.homeLink:hover {
+  color: #3149b8;
+}
+
+.logout {
+  background: #ffffff;
+  color: #3149b8;
+  border: 1px solid #dce2ef;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout:hover {
+  background: #eef1fb;
+  border-color: #3149b8;
+}
+
+.logout:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 65px auto 0;
+}
+
+.eyebrow {
+  color: #3149b8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.title {
+  color: #14213d;
+  font-size: clamp(32px, 5vw, 46px);
+  letter-spacing: -1.5px;
+  margin: 0 0 15px;
+}
+
+.description {
+  color: #77839a;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.welcomeCard {
+  background: linear-gradient(145deg, #3149b8, #17265e);
+  border-radius: 20px;
+  padding: 38px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 310px;
+}
+
+.cardLabel {
+  color: #cbd5ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.welcomeTitle {
+  font-size: 30px;
+  line-height: 1.3;
+  margin: 24px 0 16px;
+}
+
+.welcomeText {
+  color: #dce4ff;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.profileCard {
+  background: #ffffff;
+  border: 1px solid #e0e5f0;
+  border-radius: 20px;
+  padding: 38px;
+  box-shadow: 0 15px 50px rgba(25, 42, 90, 0.05);
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  background: #eef1ff;
+  color: #3149b8;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.profileTitle {
+  color: #14213d;
+  font-size: 23px;
+  margin: 0 0 7px;
+}
+
+.profileSubtitle {
+  color: #8792a6;
+  font-size: 13px;
+  margin: 0;
+}
+
+.info {
+  border-top: 1px solid #edf0f5;
+  padding: 20px 0;
+}
+
+.infoLabel {
+  display: block;
+  color: #8792a6;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.infoValue {
+  display: block;
+  color: #182544;
+  font-size: 17px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.error {
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.loading {
+  max-width: 500px;
+  margin: 120px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 45px;
+  text-align: center;
+  color: #65728b;
+}
+
+.footer {
+  max-width: 1150px;
+  margin: 70px auto 0;
+  padding-top: 22px;
+  border-top: 1px solid #dfe5ef;
+  color: #8792a6;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 22px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    margin-top: 45px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcomeCard,
+  .profileCard {
+    padding: 28px;
+  }
+
+  .welcomeCard {
+    min-height: 260px;
+  }
+
+  .welcomeTitle {
+    font-size: 26px;
+  }
+
+  .profileTitle {
+    font-size: 21px;
+  }
+}
